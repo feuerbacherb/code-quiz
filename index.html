@@ -7,10 +7,40 @@
       <title>Code Quiz</title>
    </head>
    <body>
-      <heading></heading>
+      <header>
+            <div id="high-score-link" class="high-score-link">View High Scores</div>
+            <div id="timer" class="timer">Timer:</div>
+      </header>
 
-      <main>
-         
+      <main id="page-content">
+         <section id="intro" class="intro">
+            <div>
+               <h1>Coding Quiz Challenge</h1>
+               <p>Try to answer the following code-related questions in the time limit.</p>
+               <p>Keep in mind that incorrect answers will penalize your score and<br>lower the amount of time remaining.</p>
+               <br>
+               <button type="button" id="start-quiz" class="btn start-quiz">Start Quiz</button>
+            </div>
+         </section>
+
+         <section id="questions" class="questions">
+            <div>
+               <h1>Questions</h1>
+            </div>
+         </section>
+
+         <section id="finish-quiz" class="finish-quiz">
+            <div>
+               <h1>All Done!</h1>
+               <p id="final-score">Your final score was </p>
+            </div>
+         </section>
+
+         <section id="high-scores" class="high-scores">
+            <div>
+               <h1>High Scores</h1>
+            </div>
+         </section>
       </main>
 
       <script src="./assets/js/script.js"></script>
