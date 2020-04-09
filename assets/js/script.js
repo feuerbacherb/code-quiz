@@ -3,6 +3,22 @@ var docIntro = document.getElementById("intro");
 var docQuestions = document.getElementById("questions");
 var docFinishQuiz = document.getElementById("finish-quiz");
 var docHighScores = document.getElementById("high-scores");
+var timer = document.getElementById("timer");
+var maxSeconds = 45;
+
+
+var setTime = function() {
+   var timerInterval = setInterval(function() {
+      maxSeconds--;
+      timer.textContent = "Timer: " + maxSeconds;
+
+      if (maxSeconds === 0) {
+         clearInterval(timerInterval);
+         alert("You ran out of time!");
+
+      } 
+   }, 1000)
+}
 
 
 
@@ -21,6 +37,7 @@ var btnStartHandler = function(event) {
          docFinishQuiz.style.display = "none";
          docHighScores.style.display = "none";
       }
+      setTime();
    }
 }
 
