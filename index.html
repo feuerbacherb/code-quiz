@@ -9,7 +9,7 @@
    <body>
       <header>
             <div id="high-score-link" class="high-score-link">View High Scores</div>
-            <div id="timer" class="timer">Timer:</div>
+            <div id="timer" class="timer" style="display: none;">Timer:</div>
       </header>
 
       <main id="page-content">
@@ -23,20 +23,24 @@
             </div>
          </section>
 
-         <section id="questions" class="questions">
-            <div>
-               <h1>Questions</h1>
+         <section id="questions" class="questions" style="display: none;">
+            <div id="answer-stage" class="answer-stage">
+               <h1 id="question">Questions</h1>
+               <button type="button" id="answer0" class="btn answer" /><br>
+               <button type="button" id="answer1" class="btn answer" />
+               <button type="button" id="answer2" class="btn answer" />
+               <button type="button" id="answer3" class="btn answer" />
             </div>
          </section>
 
-         <section id="finish-quiz" class="finish-quiz">
+         <section id="finish-quiz" class="finish-quiz" style="display: none;">
             <div>
                <h1>All Done!</h1>
                <p id="final-score">Your final score was </p>
             </div>
          </section>
 
-         <section id="high-scores" class="high-scores">
+         <section id="high-scores" class="high-scores" style="display: none;">
             <div>
                <h1>High Scores</h1>
             </div>

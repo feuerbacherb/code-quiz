@@ -4,10 +4,10 @@ var questions = [
    {
       title: "Inside which HTML element do we put the JavaScript?",
       answers: ["<scripting>", "<script>", "<javascript>", "<js>"],
-      answer: "<script>"
+      answer: "&lt;script&gt;"
    },
    {
-      title: "What is the correct JavaScript syntax to<br>change the content of the following HTML element:<br><br><p id='demo'>This is a demonstration.</p>",
+      title: "What is the correct JavaScript syntax to<br>change the content of the following HTML element:<br><br>&lt;p id='demo'&gt;This is a demonstration.&lt;/p&gt;",
       answers: ["document.getElementByName('p').innerHTML = 'Hello World!';", "document.getElementById('demo').innerHTML = 'Hello World!';", "#demo.innerHTML = 'Hello World!';", "document.getElement('p').innerHTML = 'Hello World!';"],
       answer: "document.getElementById('demo').innerHTML = 'Hello World!';"
    },
@@ -19,10 +19,10 @@ var questions = [
    {
       title: "Where is the correct place to insert a JavaScript?",
       answers: ["The <body> section", "The <head> section", "Both the <head> section and the <body> section are correct"],
-      answer: "Both the <head> section and the <body> section are correct"
+      answer: "Both the &lt;head&gt; section and the &lt;body&gt; section are correct"
    },
    {
-      title: "The external JavaScript file must contain the <script> tag.",
+      title: "The external JavaScript file must contain the &lt;script&gt; tag.",
       answers: ["False", "True"],
       answer: "False"
    },
@@ -49,7 +49,7 @@ var questions = [
    {
       title: "How does a WHILE loop start?",
       answers: ["while (i <= 10; i++)", "while (i <= 10)", "while i = 1 to 10", "while (var i = 0; i <= 10; i++)"],
-      answer: "while (i <= 10)"
+      answer: "while (i &lt;= 10; i++)"
    },
    {
       title: "How can you add a comment in JavaScript?",
@@ -74,7 +74,7 @@ var questions = [
    {
       title: "JavaScript is the same as Java.",
       answers: ["False", "True"],
-      answer: "True"
+      answer: "False"
    },
    {
       title: "How can you detect the client's browser name?",
@@ -97,7 +97,7 @@ var questions = [
       answer: "="
    },
    {
-      title: "What will the following code return?<br><br>Boolean(10>9)",
+      title: "What will the following code return?<br><br>Boolean(10&gt;9)",
       answers: ["true", "NaN", "false"],
       answer: "true"
    },
