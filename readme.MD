@@ -15,7 +15,7 @@
     * Save initials and score to local browser
     * Go back to initial screen
 
-https://feuerbacherb.github.io/code-quiz/assets/images/code-quiz.jpg
+![Code Quiz screenshot](https://feuerbacherb.github.io/code-quiz/assets/images/code-quiz.jpg)
 
 
 ### Utilized questions from W3Schools.com and posted such at the top of Questions.js file
