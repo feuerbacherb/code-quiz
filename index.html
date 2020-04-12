@@ -6,9 +6,9 @@
       <link rel="stylesheet" href="./assets/css/style.css">
       <title>Code Quiz</title>
    </head>
-   <body>
+   <body onload="chkLS();">
       <header>
-            <div id="high-score-link" class="high-score-link">View High Scores</div>
+            <div id="high-score-display" class="high-score-display" style="display: none;">High Score: </div>
             <div id="timer" class="timer" style="display: none;">Timer:</div>
       </header>
 
@@ -37,12 +37,20 @@
             <div>
                <h1>All Done!</h1>
                <p id="final-score">Your final score was </p>
+               <button type="button" id="save" class="btn save">Save Score</button>
+               <button type="button" id="again" class="btn try-again">Try Again</button>
+               <button type="button" id="cancel" class="btn cancel">Cancel</button>
             </div>
          </section>
 
          <section id="high-scores" class="high-scores" style="display: none;">
             <div>
-               <h1>High Scores</h1>
+               <h1>High Score</h1>
+               <form id="init">
+                  <label for="initials">Enter your initals.</label>
+                  <input type="text" placeholder="Your Initials" name="initials">
+                  <button type="button" id="save-init" class="btn confirm">Confirm Save</button>
+               </form>
             </div>
          </section>
       </main>
