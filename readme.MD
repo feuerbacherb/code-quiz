@@ -15,4 +15,4 @@
     * Save initials and score to local browser
     * Go back to initial screen
 
-### Untilized questions from W3Schools.com and posted such at the top of Questions.js file
+### Utilized questions from W3Schools.com and posted such at the top of Questions.js file
