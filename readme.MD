@@ -4,9 +4,15 @@
 * When the start button is pressed
   * Start a timer
   * Start posting questions and answers
-  * If I answer wrong, subtract time from the clock
+    * Randomize the questions
+  * If I answer wrong, subtract 10 seconds from the clock
 
-## When the questions are answered or the timer equals zero
+## When all the questions are answered or the timer equals zero
 * The game is over
-  * Save initials and score to local browser
-  * Prompt to do it all over again
+  * If the new score is less that the stored score, do not display the Save button, only Try Again and Cancel
+    * Have the Try Again and Cancel buttons go back to the first screen
+  * On Save, display a form that allows the user to type in their initials
+    * Save initials and score to local browser
+    * Go back to initial screen
+
+### Untilized questions from W3Schools.com and posted such at the top of Questions.js file
