@@ -1,3 +1,5 @@
+// variable listing
+
 var pageContentE1 = document.querySelector("#page-content");
 var docIntro = document.getElementById("intro");
 var docQuestions = document.getElementById("questions");
